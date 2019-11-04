@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Myclass {
     /**
      * This method searches the required element by.
@@ -29,6 +31,7 @@ class Myclass {
         int c = 0;
         int z = 0;
         int[] arr = {-40, -20, -10, 0, 5, 10, 30};
+        Arrays.sort(arr);
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 z = arr[i] + arr[j];
