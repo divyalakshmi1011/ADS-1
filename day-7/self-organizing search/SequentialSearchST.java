@@ -93,26 +93,26 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> {
      * Symbol table to a queue
      * @return queue consisting of symbol table elements
      */
-    public QueueLinkedList<Key > key() {
-        QueueLinkedList<Key> obj = new QueueLinkedList<Key>();
+    public Iterable<Key > keys() {
+        Queue<Key> queue = new Queue<Key>();
         Node current = head;
         while(current != null) {
-            obj.enqueue(current.key);
+            queue.enqueue(current.key);
             current = current.next;
         }
-        return obj;
+        return queue;
     }
-    /**
-     * This method is used to convert queue to string.
-     * @return String of inserted elements
-     */
-    public String keys() {
-        String str = "";
-        Node current = head;
-        while(current != null) {
-            str = str + current.key + " ";
-            current = current.next;
-        }
-        return str;
-    }
+    // /**
+    //  * This method is used to convert queue to string.
+    //  * @return String of inserted elements
+    //  */
+    // public String keys() {
+    //     String str = "";
+    //     Node current = head;
+    //     while(current != null) {
+    //         str = str + current.key + " ";
+    //         current = current.next;
+    //     }
+    //     return str;
+    // }
 }
