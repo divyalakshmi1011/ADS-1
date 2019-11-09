@@ -19,9 +19,6 @@ public final class ransome {
         Scanner scan = new Scanner(System.in);
         SeparateChainingHashST<String, Integer> hash
         = new SeparateChainingHashST();
-        // int k = scan.nextInt();
-        // int l = scan.nextInt();
-        // scan.nextLine();
         String[] magazine = scan.nextLine().split(" ");
         for (int i = 0; i < magazine.length; i++) {
             if (hash.contains(magazine[i])) {

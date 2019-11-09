@@ -3,22 +3,24 @@
  *
  * @param      <Key>    The key
  * @param      <Value>  The value
+ * 
+ * @author Divya
  */
 class SeparateChainingHashST<Key, Value> {
     /**
-     * { var_description }.
+     * capacity.
      */
     private static final int INIT_CAPACITY = 4;
     /**
-     * { var_description }.
+     * number of keys.
      */
     private int n;
     /**
-     * { var_description }.
+     * array size.
      */
     private int m;
     /**
-     * { var_description }.
+     * array.
      */
     private SequentialSearchST<Key, Value>[] st;
     /**
