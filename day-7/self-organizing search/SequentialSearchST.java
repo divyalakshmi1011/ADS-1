@@ -1,4 +1,4 @@
-import java.util.Queue;
+// import java.util.Queue;
 
 /**
  * This class implements sequential search symbol table.
