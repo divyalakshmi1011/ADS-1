@@ -26,6 +26,7 @@ class CircularQueue<Item> implements Iterable<Item> {
      * Returns true if this queue is empty.
      *
      * @return {@code true} if this queue is empty; {@code false} otherwise
+     * The time complexity is constant time.(O(1))
      */
     public boolean isEmpty() {
         return n == 0;
@@ -35,6 +36,7 @@ class CircularQueue<Item> implements Iterable<Item> {
      * Returns the number of items in this queue.
      *
      * @return the number of items in this queue
+     * The time complexity is constant time.(O(1))
      */
     public int size() {
         return n;
@@ -44,6 +46,7 @@ class CircularQueue<Item> implements Iterable<Item> {
      * Adds the item to this queue.
      *
      * @param  item the item to add
+     * The time complexity is constant time.(O(1))
      */
     public void enqueue(Item item) {
         Node oldlast = last;
@@ -63,6 +66,7 @@ class CircularQueue<Item> implements Iterable<Item> {
      *
      * @return the item on this queue that was least recently added
      * @throws NoSuchElementException if this queue is empty
+     * The time complexity is constant time.(O(1))
      */
     public Item dequeue() {
         if (isEmpty()) throw new NoSuchElementException("Queue underflow");
@@ -82,6 +86,7 @@ class CircularQueue<Item> implements Iterable<Item> {
      * Returns an iterator that iterates over the items in this queue in FIFO order.
      *
      * @return an iterator that iterates over the items in this queue in FIFO order
+     * The time complexity depends on size of queue.(O(n)).
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(last.next);
