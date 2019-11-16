@@ -23,7 +23,7 @@ class Card implements Comparable<Card> {
     }
  
     public String toString() {
-        return rank + " of " + suit;
+        return rank + " " + suit;
     }
     public int compareTo(Card that) {
         if(this.rank < that.rank) {

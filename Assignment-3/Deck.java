@@ -55,7 +55,7 @@ public class Deck {
     public static String toString(Card[] cards) {
         String s = "";
         for(int i = 0; i < cards.length; i++) {
-            s += cards[i] + " ";
+            s += cards[i] + ",";
         }
         return s;
         }
